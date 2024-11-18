@@ -4,7 +4,7 @@ import './index.css';
 
 const cardData = [
   {
-    image: 'src/assets/th (6).jpeg',
+    image: '/th (6).jpeg',
     title: 'Card 1',
     description: 'Am a Developer',
     name: 'John Doe',
@@ -12,7 +12,7 @@ const cardData = [
     gender: true, 
   },
   {
-    image: 'src/assets/th (7).jpeg',
+    image: '/th (7).jpeg',
     title: 'Card 2',
     description: 'Am a Docter',
     name: 'Jane Smith',
@@ -20,7 +20,7 @@ const cardData = [
     gender: true, 
   },
   {
-    image: 'src/assets/th (5).jpeg',
+    image: '/th (5).jpeg',
     title: 'Card 3',
     description: 'Am a Photographer',
     name: 'Alice Brown',
@@ -28,7 +28,7 @@ const cardData = [
     gender: false, 
   },
   {
-    image: 'src/assets/th (4).jpeg',
+    image: '/th (4).jpeg',
     title: 'Card 4',
     description: 'Am a Student',
     name: 'Blen Fekadu',
