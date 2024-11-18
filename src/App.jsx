@@ -9,7 +9,7 @@ import Support from './Support';
 function App() {
   return (
     <Router>
-      <Navbar /> 
+ 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/assignment" element={<Assignment />} />
