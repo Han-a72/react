@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="body" >
       <h1>Login Account</h1>
 
       {!isLoggedIn && !showError && <LoginForm onLogin={handleLogin} />}
