@@ -1,38 +1,26 @@
-import React, { useState } from "react";
-import LoginForm from "./LoginForm";
-import UserDashboard from "./UserDashboard";
-import AdminDashboard from "./AdminDashboard";
-import ErrorMessage from "./ErrorMessage";
+import React, { useState } from 'react';
+import ItemList from './ItemList';
+import AddItemForm from './AddItemForm';
+import './index.css';
 
-function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [showError, setShowError] = useState(false);
+const App = () => {
+    const [items, setItems] = useState([]);
 
-  const handleLogin = (username, password) => {
-    if (username === "admin" && password === "admin") {
-      setIsAdmin(true);
-      setIsLoggedIn(true);
-      setShowError(false);
-    } else if (username !== "" && password !== "") {
-      setIsAdmin(false);
-      setIsLoggedIn(true);
-      setShowError(false);
-    } else {
-      setShowError(true);
-    }
-  };
+    const handleAddItem = (item) => {
+        setItems([...items, item]);
+    };
 
-  return (
-    <div className="body" >
-      <h1>Login Account</h1>
+    const handleDeleteItem = (index) => {
+        setItems(items.filter((_, i) => i !== index));
+    };
 
-      {!isLoggedIn && !showError && <LoginForm onLogin={handleLogin} />}
-      {isLoggedIn && isAdmin && <AdminDashboard />}
-      {isLoggedIn && !isAdmin && <UserDashboard />}
-      {showError && <ErrorMessage />}
-    </div>
-  );
-}
+    return (
+        <div>
+            <h1>Item List</h1>
+            <AddItemForm onAdd={handleAddItem} />
+            <ItemList items={items} onDelete={handleDeleteItem} />
+        </div>
+    );
+};
 
 export default App;
