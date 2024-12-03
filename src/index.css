@@ -1,55 +1,25 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: #333;
-  text-align: center;
-  padding: 40px;
-}
-
-form {
+/* Input.css */
+.input-container {
   display: flex;
   justify-content: center;
-  margin: 20px;
-}
-
-input {
-  padding: 8px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-button {
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  background: #fff;
-  margin: 10px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
-button {
-  background: #3b434d;
-  color: #fff;
-  border: none;
+.input-box {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
   border-radius: 4px;
-  padding: 5px 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-box:focus {
+  border-color: #007BFF; 
+}
+
+.input-box::placeholder {
+  color: #888;
 }
