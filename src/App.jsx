@@ -1,11 +1,11 @@
 
 
-import MyComponent from './MyComponent'
+import List from './List'
 
 function App(){
     return(
         <>
-           <MyComponent></MyComponent>
+           <List></List>
          
         </>
      

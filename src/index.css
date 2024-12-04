@@ -1,25 +1,85 @@
-/* Input.css */
-.input-container {
+
+.list-container {
+  width: 60%;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
 }
 
-.input-box {
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 0.3s ease;
+.user-display {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.input-box:focus {
-  border-color: #007BFF; 
+.edit-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.input-box::placeholder {
-  color: #888;
+.edit-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+
+.save-btn {
+  background-color: #28a745;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
 }
