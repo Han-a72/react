@@ -1,16 +1,14 @@
+import React from "react";
+import Counter from "./Counter";
+import './index.css';
 
-
-import List from './List'
-
-function App(){
-    return(
-        <>
-           <List></List>
-         
-        </>
-     
-    )
-}
-
+const App = () => {
+  return (
+    <div className="app-container">
+      <h1>Counter App</h1>
+      <Counter />
+    </div>
+  );
+};
 
 export default App;

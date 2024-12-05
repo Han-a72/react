@@ -1,85 +1,32 @@
-
-.list-container {
-  width: 60%;
-  margin: 2rem auto;
+.app-container {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 50px auto;
 }
 
 h1 {
-  text-align: center;
-  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #586686;
 }
 
-.user-list {
-  list-style: none;
-  padding: 0;
-}
-
-.user-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.user-display {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.edit-section {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.edit-input {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  color: #fff;
+button {
+  background-color:  #586686;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.edit-btn {
-  background-color: #007bff;
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
 }
 
-.save-btn {
-  background-color: #28a745;
-}
-
-.cancel-btn {
-  background-color: #dc3545;
-}
-
-.btn:hover {
-  opacity: 0.9;
-}
-
-.edit-btn:hover {
-  background-color: #0056b3;
-}
-
-.save-btn:hover {
-  background-color: #218838;
-}
-
-.cancel-btn:hover {
-  background-color: #c82333;
+button:hover:not(:disabled) {
+  background-color: #586686;
 }
