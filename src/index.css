@@ -1,32 +1,39 @@
-.app-container {
+/* General Reset */
+body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 50px auto;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #586686;
-}
-
-button {
-  background-color:  #586686;
-  color: white;
+  background-color:  rgb(173, 156, 156);
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-button:disabled {
-  background-color: #ddd;
-  cursor: not-allowed;
+/* Parent Component Styles */
+.parent-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #631042;
+  color: rgb(173, 156, 156);
 }
 
-button:hover:not(:disabled) {
-  background-color: #586686;
+.parent-container h1 {
+  margin: 0;
+}
+
+/* Child Component Styles */
+.child-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.child-container h1 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.child-container p {
+  font-size: 1em;
+  color:   rgb(173, 156, 156);
 }

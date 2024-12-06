@@ -1,14 +1,21 @@
+
 import React from "react";
-import Counter from "./Counter";
+import Child from "./Child"; 
+import { MyContextProvider } from "./Context";
 import './index.css';
 
-const App = () => {
+
+
+function App() {
   return (
-    <div className="app-container">
-      <h1>Counter App</h1>
-      <Counter />
-    </div>
+    <MyContextProvider>
+      <div className="parent-container">
+        <h1>Parent Component</h1>
+        <Child />
+      </div>
+    </MyContextProvider>
   );
-};
+}
 
 export default App;
+
