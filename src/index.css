@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +6,6 @@ body {
   border: none;
 }
 
-/* Parent Component Styles */
 .parent-container {
   text-align: center;
   padding: 20px;
@@ -18,7 +17,7 @@ body {
   margin: 0;
 }
 
-/* Child Component Styles */
+
 .child-container {
   margin-top: 20px;
   padding: 15px;
