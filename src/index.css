@@ -1,38 +1,5 @@
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color:  rgb(173, 156, 156);
-  border: none;
-}
-
-.parent-container {
-  text-align: center;
-  padding: 20px;
-  background-color: #631042;
-  color: rgb(173, 156, 156);
-}
-
-.parent-container h1 {
-  margin: 0;
-}
-
-
-.child-container {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.child-container h1 {
-  font-size: 1.5em;
-  color: #333;
-}
-
-.child-container p {
-  font-size: 1em;
-  color:   rgb(173, 156, 156);
+.line{
+  border: 1;
+  color:blue;
 }
