@@ -1,5 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.line{
-  border: 1;
-  color:blue;
+.weather-container {
+  background: url('/download.jpeg') center/cover no-repeat;
+  margin: 0;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.header input {
+  margin: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 20%;
+  max-width: 400px;
+  font-size: 16px;
+  background-color: #4e4945;
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 70px;
+  margin-bottom: 80px;
+}
+
+.location-temp-description {
+  display: flex;
+  align-items: center;
+  gap: 1000px;
+}
+
+.location-temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.location-temp h2 {
+  font-size: 50px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.description p {
+  display: flex;
+  justify-content: end;
+  transform: rotate(270deg);
+  margin-top: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details {
+  background-color: rgb(97, 97, 82);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  gap: 20px;
+  opacity: 0.6;
+  border: 6px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+
+.details div {
+  text-align: center;
+}
+
+.details p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.details span {
+  font-size: 0.9rem;
 }
