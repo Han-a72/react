@@ -18,9 +18,7 @@ const MovieList = () => {
 
     axios
       .get(
-        `https://api.themoviedb.org/3/search/movie?api_key=${
-          import.meta.env.VITE_TMDB_API_KEY
-        }&query=${searchQuery}`
+        `https://api.themoviedb.org/3/search/movie?api_key=67ee1a10024ec3ef0d79f99f1ea636da&query=${searchQuery}`
       )
 
       .then((response) => {
